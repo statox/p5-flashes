@@ -1,0 +1,50 @@
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+    integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="sketch.js"></script>
+<style>
+    body {
+        padding: 0;
+        margin-bottom: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #1a1e1d;
+    }
+
+    p {
+        color: #c9e1e1;
+    }
+
+    #loopSpan {
+        color: red;
+    }
+</style>
+
+<head>
+</head>
+
+<body>
+    <div id="canvasDiv">
+        <p>
+            A cellular automata inspired by <a href="https://adventofcode.com/2021/day/11">Advent of code's Dumbo
+                octopus</a>
+        </p>
+        <p>
+            Step: <span id="stepSpan"></span> Flashes: <span id="flashesSpan"></span>
+            &nbsp;
+            <span id="loopSpan"></span>
+            <span id="noLoopSpan">No loop detected for now</span>
+        </p>
+    </div>
+</body>
+
+</html>
